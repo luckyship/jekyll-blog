@@ -1,7 +1,7 @@
 # Site
-title:              嘿嘿！想不到吧
-bio:                '一个前端大佬搭建的博客<br> 点击posts观看大作'
-description:        "没错就是我"
+title:              从入门到放弃
+bio:                '分享我的学习之路'
+description:        ""
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
