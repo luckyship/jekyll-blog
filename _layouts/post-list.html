@@ -8,6 +8,7 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
+    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
 </head>
 <body>
     {% include nav.html %}
@@ -27,8 +28,11 @@ layout: compress
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                            <span class="zoombtn date float-right" style="border: none;">{{ post.date | date: "%Y-%m-%d" }}</span>
+                            <div class="clearfix"></div>
                             <p>{{ post.excerpt }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+
                         </li>
                     </ul>
                         {% endif %}
@@ -38,7 +42,8 @@ layout: compress
         </div>
     </header>
     {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
-    <script type="text/javascript">(new WOW).init();</script>
+    <script type="text/javascript">
+        (new WOW).init();
+    </script>
 </body>
 </html>
