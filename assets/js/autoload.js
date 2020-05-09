@@ -30,7 +30,7 @@ Promise.all([
 	loadExternalResource(live2d_path + "live2d.min.js", "js"),
 	loadExternalResource(live2d_path + "waifu-tips.js", "js")
 ]).then(() => {
-	initWidget(live2d_path + "waifu-tips.json", "https://api.pkupi.com/live2d/");
+	initWidget(live2d_path + "waifu-tips.json", "https://api3.fghrsh.net/live2d/");
 });
 //initWidget第一个参数为waifu-tips.json的路径，第二个参数为api地址
 //api后端可自行搭建，参考https://github.com/fghrsh/live2d_api
